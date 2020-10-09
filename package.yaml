@@ -1,0 +1,28 @@
+name: slient
+
+
+default-extensions:
+  - ExtendedDefaultRules
+  - NoImplicitPrelude
+  - OverloadedStrings
+
+
+dependencies:
+  - aeson == 1.4.*
+  - base >= 4.7 && < 5
+  - bytestring == 0.10.*
+  - cmark == 0.5.*
+  - flow == 1.*
+  - protolude == 0.2.*
+  - shikensu == 0.3.*
+  - text == 1.*
+  - time == 1.*
+  - unordered-containers == 0.2.*
+
+
+executables:
+  # 🚜
+  build:
+    main: Main.hs
+    source-dirs:
+      - system/Build
